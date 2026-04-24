@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0-init
+      author: artem
+      changes:
+        - sql:
+            sql: SELECT 1
