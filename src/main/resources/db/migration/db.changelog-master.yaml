@@ -1,7 +1,9 @@
 databaseChangeLog:
-  - changeSet:
-      id: 0-init
-      author: artem
-      changes:
-        - sql:
-            sql: SELECT 1
+  - include:
+      file: db/migration/001-create-users-table.yaml
+  - include:
+      file: db/migration/002-create-roles-table.yaml
+  - include:
+      file: db/migration/003-create-user-roles-table.yaml
+  - include:
+      file: db/migration/004-create-cards-table.yaml
